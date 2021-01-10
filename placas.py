@@ -24,7 +24,7 @@ async def actualizacion_placas():
         browser = await launch(headless = False)
         page = await browser.newPage()
         page.setDefaultNavigationTimeout(60000);
-        await page.goto('https://docs.google.com/spreadsheets/d/1RvLaccbOnDDzLNNe87J02ZlvJkwEv-BvC0VckK-5eSQ/edit#gid=0', timeout=45000, waitUntil='networkidle2')
+        await page.goto('https://docs.google.com/LONKTODOWNLOAD', timeout=45000, waitUntil='networkidle2')
         await page.waitForSelector('#docs-file-menu')
         await page.click('#docs-file-menu')
         await page.waitFor(2000)
